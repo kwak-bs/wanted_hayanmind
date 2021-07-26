@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Comment from './component/Comment/Comment';
+import styled from 'styled-components';
 
-function App() {
+export default function App() {
+  const [data, setIsdata] = useState([]);
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/comments?_page=1&_limit=10', {
+      method: 'GET',
+    })
+      .then((res) => res.json())
+      .then((data) => setIsdata(data));
+  }, []);
+
+  console.log(data);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Wrap>
+        <Comment data={data} />
+      </Wrap>
+    </Container>
   );
 }
 
-export default App;
+const Container = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+`;
+
+const Wrap = styled.div`
+  width: 500px;
+  margin-top: 26px;
+`;
