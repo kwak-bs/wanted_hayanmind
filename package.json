@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
+    "predeploy":"yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -39,6 +39,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "homepage": "http://kwak-bs.github.io/wanted_hayanmind"
+    "homepage": "https://kwak-bs.github.io/wanted_hayanmind/"
   }
 }
