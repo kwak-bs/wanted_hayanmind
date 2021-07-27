@@ -6,7 +6,7 @@ export default function Comment({ data }) {
     <div>
       {data.map(({ id, email, name }) => {
         return (
-          <CommentContainer>
+          <CommentContainer key = {id}>
             <CommentBox>
               <Title>Comment ld</Title>
               <Context>{id}</Context>
