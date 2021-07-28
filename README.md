@@ -8,6 +8,8 @@
 
 <br/>
 
+#### 🎈[배포 링크](https://kwak-bs.github.io/wanted_hayanmind/)
+
 <br/>
 
 ## 📚 과제 요구 사항
