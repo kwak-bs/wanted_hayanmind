@@ -67,7 +67,7 @@
 
 ## 📽 시연 영상
 
-![infiScroll-gif-maker](https://user-images.githubusercontent.com/51367622/127190596-29c73c04-354d-4e2d-a01a-10dc3d371134.gif)
+<img src = "https://user-images.githubusercontent.com/51367622/127190596-29c73c04-354d-4e2d-a01a-10dc3d371134.gif" width="100%" >
 
 
 
