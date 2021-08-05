@@ -13,9 +13,9 @@
 <br/>
 
 <details>
-    <summary><STRONG><i>
-        펼치기
-        </i></STRONG></summary>
+    <summary><STRONG>
+       📚 과제 요구사항 보기
+        <STRONG></summary>
     <div markdown="1">
 <h3>1. 아래 정보를 입력받아 회원가입 페이지를 구현하고 로그인/로그아웃 기능을 구현해주세요.</h3>
 - 이름<br/>
@@ -44,6 +44,7 @@
 - 검색기능 구현<br/>
 </div>
 </details>
+
 
 ## 📚 과제 요구 사항
 
