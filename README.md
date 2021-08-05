@@ -13,9 +13,9 @@
 <br/>
 
 <details>
-    <summary><BIG><i>
+    <summary><STRONG><i>
         펼치기
-        </i></BIG></summary>
+        </i></STRONG></summary>
     <div markdown="1">
 <h3>1. 아래 정보를 입력받아 회원가입 페이지를 구현하고 로그인/로그아웃 기능을 구현해주세요.</h3>
 - 이름<br/>
