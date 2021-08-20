@@ -26,8 +26,9 @@
     <div markdown="1">
 <h4>1. Implement the user's comment data list with infinite scrolling by getting more 10 comments repeatedly.</h4>
 <h4>2. Data API</h4>
+<pre>
    - The user's dummy comment data can be called through the API below.<br/>
-   		<pre/>- https://jsonplaceholder.typicode.com/comments<br/>
+   		- https://jsonplaceholder.typicode.com/comments<br/>
    - The following parameters are supported:<br/>
      	- <code>_page</code><br/>
        		- it starts at 1.<br/>
@@ -45,7 +46,7 @@
        "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\\ntempora quo necessitatibus\\ndolor quam autem quasi\\nreiciendis et nam sapiente accusantium"
      }, 
    ]
-   </code><br/>
+   </code><br/></pre>
 <h4>3. You can use id as comment id, email as user's email and body as comment text</h4>
 <h4>4. Please look at the following design guide link and reflect the design. </h4>
    - https://www.figma.com/file/T9P3B5qjnTqhWi1Ou5BmIL/HayanMind-FrontEnd-TA<br/>
