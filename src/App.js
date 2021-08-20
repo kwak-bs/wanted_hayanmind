@@ -23,8 +23,8 @@ export default function App() {
   return (
     <Container>
       <Wrap>
-        {data.map(({ id, email, name }, index) => {
-          return <Comment id={id} email={email} name={name} key={index} />;
+        {data.map(({ id, email, name }) => {
+          return <Comment id={id} email={email} name={name} key={id} />;
         })}
       </Wrap>
       {loading ? 'Loading...' : <FetchMore setPage={setPage} />}
