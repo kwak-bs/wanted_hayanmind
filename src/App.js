@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from "react";
-import Comment from "./component/Comment/Comment";
+import Comment from "./Comment";
 import styled from "styled-components";
 
 export default function App() {
