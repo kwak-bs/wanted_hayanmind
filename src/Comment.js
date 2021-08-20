@@ -1,28 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Comment({ data }) {
+export default function Comment({ id, email, name }) {
   return (
-    <div>
-      {data.map(({ id, email, name },index) => {
-        return (
-          <CommentContainer key={index}>
-            <CommentBox>
-              <Title>Comment ld</Title>
-              <Context>{id}</Context>
-            </CommentBox>
-            <CommentBox>
-              <Title>Email</Title>
-              <Context>{email}</Context>
-            </CommentBox>
-            <div>
-              <Title>Comment</Title>
-              <Context>{name}</Context>
-            </div>
-          </CommentContainer>
-        );
-      })}
-    </div>
+    <CommentContainer>
+      <CommentBox>
+        <Title>Comment ld</Title>
+        <Context>{id}</Context>
+      </CommentBox>
+      <CommentBox>
+        <Title>Email</Title>
+        <Context>{email}</Context>
+      </CommentBox>
+      <div>
+        <Title>Comment</Title>
+        <Context>{name}</Context>
+      </div>
+    </CommentContainer>
   );
 }
 
