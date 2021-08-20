@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/wanted_hayanmind/static/js/main.ef2d6a3d.chunk.js",
-    "main.js.map": "/wanted_hayanmind/static/js/main.ef2d6a3d.chunk.js.map",
+    "main.js": "/wanted_hayanmind/static/js/main.304fa4ce.chunk.js",
+    "main.js.map": "/wanted_hayanmind/static/js/main.304fa4ce.chunk.js.map",
     "runtime-main.js": "/wanted_hayanmind/static/js/runtime-main.9ab77efb.js",
     "runtime-main.js.map": "/wanted_hayanmind/static/js/runtime-main.9ab77efb.js.map",
-    "static/js/2.d8f5a00e.chunk.js": "/wanted_hayanmind/static/js/2.d8f5a00e.chunk.js",
-    "static/js/2.d8f5a00e.chunk.js.map": "/wanted_hayanmind/static/js/2.d8f5a00e.chunk.js.map",
+    "static/js/2.b49dc5e6.chunk.js": "/wanted_hayanmind/static/js/2.b49dc5e6.chunk.js",
+    "static/js/2.b49dc5e6.chunk.js.map": "/wanted_hayanmind/static/js/2.b49dc5e6.chunk.js.map",
     "index.html": "/wanted_hayanmind/index.html",
-    "static/js/2.d8f5a00e.chunk.js.LICENSE.txt": "/wanted_hayanmind/static/js/2.d8f5a00e.chunk.js.LICENSE.txt"
+    "static/js/2.b49dc5e6.chunk.js.LICENSE.txt": "/wanted_hayanmind/static/js/2.b49dc5e6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9ab77efb.js",
-    "static/js/2.d8f5a00e.chunk.js",
-    "static/js/main.ef2d6a3d.chunk.js"
+    "static/js/2.b49dc5e6.chunk.js",
+    "static/js/main.304fa4ce.chunk.js"
   ]
 }
