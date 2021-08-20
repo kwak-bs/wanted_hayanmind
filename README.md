@@ -69,7 +69,7 @@
 
 ## 📽 시연 영상
 
-<img src = "https://user-images.githubusercontent.com/51367622/127190596-29c73c04-354d-4e2d-a01a-10dc3d371134.gif" >
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/51367622/130284641-d3c9ac2f-90d9-4fec-a1f4-7f593c0c89c6.gif)
 
 <br/>
 
