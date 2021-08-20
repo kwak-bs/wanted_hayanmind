@@ -4,9 +4,9 @@ import styled from 'styled-components';
 export default function Comment({ data }) {
   return (
     <div>
-      {data.map(({ id, email, name }) => {
+      {data.map(({ id, email, name },index) => {
         return (
-          <CommentContainer key={id}>
+          <CommentContainer key={index}>
             <CommentBox>
               <Title>Comment ld</Title>
               <Context>{id}</Context>
