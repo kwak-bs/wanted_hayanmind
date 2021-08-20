@@ -1,64 +1,33 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Comment from './Comment';
 import styled from 'styled-components';
+import { getComments } from './api/getComment';
+import FetchMore from './FetchMore';
 
 export default function App() {
   const [data, setIsdata] = useState([]);
   const [loading, setIsLoading] = useState(false);
   const [page, setPage] = useState(1);
-  const [target, setTarget] = useState(null);
-  const viewport = useRef(null);
 
-  // data fetch
-  const getItems = () => {
+  const getItems = async () => {
     setIsLoading(true);
-    fetch(
-      `https://jsonplaceholder.typicode.com/comments?_page=${page}&_limit=10`,
-      {
-        method: 'GET',
-      }
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setIsdata((prev) => prev.concat(data));
-        setIsLoading(false);
-      });
+    const fetchData = await getComments(page);
+    setIsdata((prev) => prev.concat(fetchData));
+    setIsLoading(false);
   };
 
-  // // 초기 아이템 로딩
   useEffect(() => {
     getItems();
-    // 이슈 1. page 증가x, 최신 page를 못찾았던 이슈
-  }, []);
-
-  // IntersectionObserver Callback
-  const onIntersect = ([entry], observer) => {
-    if (entry.isIntersecting) {
-      // 이슈 3. 초기 마운트때 20개.
-      if (!loading) {
-        // 이슈 2. 무한 page 증식
-        setPage((prev) => prev + 1);
-      }
-    }
-  };
-
-  // useEffect(() => {
-  //   let observer;
-  //   if (target) {
-  //     observer = new IntersectionObserver(onIntersect, { threshold: 0.5 });
-  //     observer.observe(target);
-  //   }
-  //   return () => observer && observer.disconnect();
-  // }, [target, loading]);
+  }, [page]);
 
   return (
     <Container>
-      <Wrap ref={viewport}>
+      <Wrap>
         {data.map(({ id, email, name }, index) => {
           return <Comment id={id} email={email} name={name} key={index} />;
         })}
       </Wrap>
-      <div className="Loading">{loading && 'Loading...'}</div>
+      {loading ? 'Loading...' : <FetchMore setPage={setPage} />}
     </Container>
   );
 }
