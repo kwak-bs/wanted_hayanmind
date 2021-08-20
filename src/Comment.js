@@ -6,7 +6,7 @@ export default function Comment({ data }) {
     <div>
       {data.map(({ id, email, name }) => {
         return (
-          <CommentContainer key = {id}>
+          <CommentContainer key={id}>
             <CommentBox>
               <Title>Comment ld</Title>
               <Context>{id}</Context>
@@ -32,6 +32,7 @@ const CommentContainer = styled.div`
   margin: 10px 0;
   border-radius: 20px;
   background-color: #f8f9fa;
+  border: 1px solid gray;
 `;
 
 const CommentBox = styled.div`
