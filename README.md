@@ -5,9 +5,11 @@
 
 ---
 
-#### 🚀[Repository](https://github.com/kwak-bs/wanted_hayanmind)
+#### 🚀[Blog](https://bbangson.tistory.com/92) 포스팅 보러가기.
 
 ---
+
+<br/>
 
 ## 📌 프로젝트 소개
 
@@ -52,6 +54,11 @@
  <h4>6. You don't have to specify a font for the text. </h4>
 </div>
 </details>
+<br/>
+
+## 📽 시연 영상
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/51367622/130284641-d3c9ac2f-90d9-4fec-a1f4-7f593c0c89c6.gif)
 
 <br/>
 
@@ -64,12 +71,6 @@
 ### 실행
 
 `yarn start`
-
-<br/>
-
-## 📽 시연 영상
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/51367622/130284641-d3c9ac2f-90d9-4fec-a1f4-7f593c0c89c6.gif)
 
 <br/>
 
